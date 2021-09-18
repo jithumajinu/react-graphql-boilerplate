@@ -59,9 +59,9 @@ https://studio.apollographql.com/
 
 
 
-#####<p> http://localhost:3000/</p>
+##### http://localhost:3000/ 
 <p><img align="center" src="https://github.com/jithumajinu/react-graphql-boilerplate/blob/main/images/Screen.png?raw=true" alt="graphgql react simple crud" /></p>
 
 
-#####<p> http://localhost:4000/graphql</p>
+##### http://localhost:4000/graphql
 <p><img align="center" src="https://github.com/jithumajinu/react-graphql-boilerplate/blob/main/images/grapgql.png?raw=true" alt="graphgql react simple crud" /></p>
