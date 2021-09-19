@@ -1,30 +1,12 @@
-const express = require('express');
-const { ApolloServer, gql } = require('apollo-server-express');
-const cors = require('cors');
+import { gql } from "apollo-server-express"
 
 let todos = [
   {
     id: Date.now().toString(),
-    text: 'Hello from GraphQL',
+    text: 'Hello from GraphQL 1',
     completed: true,
   },
 ];
-
-const typeDefs = gql`
-  type Todo {
-    id: String
-    text: String
-    completed: Boolean
-  }
-  type Query {
-    todos: [Todo]!
-  }
-  type Mutation {
-    createTodo(text: String!):String
-    removeTodo(id: String!):String
-    updateTodo(id: String!):String
-  }
-`;
 
 const resolvers = {
   Query: {
@@ -58,13 +40,4 @@ const resolvers = {
   }
 };
 
-const server = new ApolloServer({ typeDefs, resolvers });
-
-const app = express();
-server.applyMiddleware({ app });
-
-app.use(cors());
-
-app.listen({ port: 4000 }, () =>
-  console.log('Now browse to http://localhost:4000' + server.graphqlPath)
-);
+export default resolvers;

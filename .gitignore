@@ -1,4 +1,5 @@
 graphql-server/node_modules/
+graphql-server/.env
 client-app/node_modules/
 .DS_Store
 yarn.lock
